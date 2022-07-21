@@ -2,12 +2,12 @@
   "type": "record",
   "name": "FinalProductPriceAvro",
   "fields": [
-    {"name": "sku", "type": "String"},
-    {"name": "name","type":"String" },
-    {"name": "details","type":"String" },
-    {"name": "price","type":"String" },
-    {"name": "directDiscount","type":"String" },
-    {"name": "promoDiscount","type":"String" },
-    {"name": "effectivePrice","type":"String" }
+    {"name": "sku", "type": "string"},
+    {"name": "name","type":"string" },
+    {"name": "details","type":"string" },
+    {"name": "price","type":"string" },
+    {"name": "directDiscount","type":"string" },
+    {"name": "promoDiscount","type":"string" },
+    {"name": "effectivePrice","type":"string" }
   ]
 }

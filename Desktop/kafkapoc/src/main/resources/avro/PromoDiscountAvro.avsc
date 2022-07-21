@@ -2,7 +2,7 @@
   "type": "record",
   "name": "PromoDiscountAvro",
   "fields": [
-    {"name": "sku", "type": "String"},
-    {"name": "promoDiscount","type":"String" }
+    {"name": "sku", "type": "string"},
+    {"name": "promoDiscount","type":"string" }
   ]
 }
