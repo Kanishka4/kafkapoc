@@ -1,0 +1,7 @@
+{"namespace": "com.example.kafkapoc.avro",
+ "type": "record",
+ "name": "DataRecordAvro",
+ "fields": [
+     {"name": "count", "type": "long"}
+ ]
+}
