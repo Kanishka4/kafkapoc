@@ -3,6 +3,6 @@
   "name": "PromoDiscountAvro",
   "fields": [
     {"name": "sku", "type": "String"},
-    {"name": "promoDiscount",type:"String" }
+    {"name": "promoDiscount","type":"String" }
   ]
 }

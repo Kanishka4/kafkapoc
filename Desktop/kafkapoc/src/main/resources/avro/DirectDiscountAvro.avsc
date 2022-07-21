@@ -3,6 +3,6 @@
   "name": "DirectDiscountAvro",
   "fields": [
     {"name": "sku", "type": "String"},
-    {"name": "directDiscount",type:"String" }
+    {"name": "directDiscount","type":"String" }
   ]
 }
