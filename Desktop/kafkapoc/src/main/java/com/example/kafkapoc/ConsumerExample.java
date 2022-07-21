@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ConsumerExample {
 
-  @KafkaListener(topics = "")
+  @KafkaListener(topics = "test")
   public void consume(final ConsumerRecord<Long, DataRecordAvro> consumerRecord) {
     log.info("received {} {}", consumerRecord.key(), consumerRecord.value());
 
