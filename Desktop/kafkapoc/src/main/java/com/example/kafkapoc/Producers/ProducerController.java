@@ -1,4 +1,4 @@
-package com.example.kafkapoc;
+package com.example.kafkapoc.Producers;
 
 import com.example.kafkapoc.avro.DataRecordAvro;
 import org.apache.kafka.clients.producer.KafkaProducer;

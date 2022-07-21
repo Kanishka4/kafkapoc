@@ -1,0 +1,8 @@
+{"namespace": "com.example.kafkapoc.avro",
+  "type": "record",
+  "name": "DirectDiscountAvro",
+  "fields": [
+    {"name": "sku", "type": "String"},
+    {"name": "directDiscount",type:"String" }
+  ]
+}

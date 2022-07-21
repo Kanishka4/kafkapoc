@@ -113,6 +113,9 @@
 							<sourceDirectory>${project.basedir}/src/main/resources/avro</sourceDirectory>
 							<includes>
 								<include>DataRecordAvro.avsc</include>
+								<include>DirectDiscountAvro.avsc</include>
+								<include>PromoDiscountAvro.avsc</include>
+								<include>FinalProductPriceAvro.avsc</include>
 							</includes>
 							<outputDirectory>${project.basedir}/src/main/java/com/example/kafkapoc</outputDirectory>
 						</configuration>

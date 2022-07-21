@@ -1,0 +1,13 @@
+{"namespace": "com.example.kafkapoc.avro",
+  "type": "record",
+  "name": "FinalProductPriceAvro",
+  "fields": [
+    {"name": "sku", "type": "String"},
+    {"name": "name",type:"String" },
+    {"name": "details",type:"String" },
+    {"name": "price",type:"String" },
+    {"name": "directDiscount",type:"String" },
+    {"name": "promoDiscount",type:"String" },
+    {"name": "effectivePrice",type:"String" }
+  ]
+}

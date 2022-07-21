@@ -1,4 +1,4 @@
-package com.example.kafkapoc;
+package com.example.kafkapoc.Consumers;
 
 import com.example.kafkapoc.avro.DataRecordAvro;
 import lombok.extern.log4j.Log4j2;
