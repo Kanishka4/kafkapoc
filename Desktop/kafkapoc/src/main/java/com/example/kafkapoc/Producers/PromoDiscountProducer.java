@@ -17,7 +17,7 @@ import java.util.Properties;
 public class PromoDiscountProducer {
     final String topic= Topics.promoDiscount;
 
-    @PostMapping("/promo-discount")
+    @PostMapping(value="/promo/discount")
     public void addContents( @RequestBody PromoDiscount promoDiscount) throws InterruptedException {
         try (KafkaProducer<String, PromoDiscountAvro> producer = new KafkaProducer<>(new Properties())) {
             final String id = promoDiscount.getSku();
