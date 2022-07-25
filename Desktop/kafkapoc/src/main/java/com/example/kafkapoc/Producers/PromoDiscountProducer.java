@@ -17,9 +17,13 @@ import java.util.Properties;
 public class PromoDiscountProducer {
     final String topic= Topics.promoDiscount;
 
-    @PostMapping(value="/promo/discount")
+    @PostMapping("/promo/discount")
     public void addContents( @RequestBody PromoDiscount promoDiscount) throws InterruptedException {
-        try (KafkaProducer<String, PromoDiscountAvro> producer = new KafkaProducer<>(new Properties())) {
+        Properties props = new Properties();
+        props.put("bootstrap.servers", "localhost:9092");
+        props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+        props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+        try (KafkaProducer<String, PromoDiscountAvro> producer = new KafkaProducer<>(props)) {
             final String id = promoDiscount.getSku();
             PromoDiscountAvro recordAvro=new PromoDiscountAvro();
             recordAvro.setSku(promoDiscount.getSku());
@@ -33,3 +37,4 @@ public class PromoDiscountProducer {
 
     }
 }
+
