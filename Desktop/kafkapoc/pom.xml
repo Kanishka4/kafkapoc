@@ -120,6 +120,7 @@
 							<includes>
 								<include>DataRecordAvro.avsc</include>
 								<include>DirectDiscountAvro.avsc</include>
+								<include>SellingPriceAvro.avsc</include>
 								<include>PromoDiscountAvro.avsc</include>
 								<include>FinalProductPriceAvro.avsc</include>
 							</includes>
